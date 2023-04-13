@@ -10,11 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  webAppName: '<Name of your webapp>'
-  serviceConnection: '<Name of your webARM Service connection>'
-  azureSubscriptionId: '<Azure subscriptionId>'
-  loadTestResource: '<Name of your load test resource>'
-  loadTestResourceGroup: '<Name of your load test resource group>'
+  webAppName: 'slow-nodejs-app'
+  serviceConnection: 'POC - Azure Load Testing'
+  azureSubscriptionId: '83e40e54-5652-45ac-b526-202136f6cfd1'
+  loadTestResource: 'poc-azure-load-testing'
+  loadTestResourceGroup: 'rg-azure-load-testing'
   location: 'EAST US'
 
 
