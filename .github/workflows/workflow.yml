@@ -10,8 +10,8 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: "slow-nodejs-app"    # set this to your application's name
-  LOAD_TEST_RESOURCE: "poc-azure-load-testing"
-  LOAD_TEST_RESOURCE_GROUP: "rg-azure-load-testing"
+  LOAD_TEST_RESOURCE: "slow-nodejs-app-load-testing"
+  LOAD_TEST_RESOURCE_GROUP: "slow-nodejs-appeastus-rg"
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '14.15.1'                # set this to the node version to use
   LOCATION: "East US"
