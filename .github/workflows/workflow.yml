@@ -81,10 +81,11 @@ jobs:
           azPSVersion: "latest"      
           
       - name: Create Azure Load Testing resource
-        uses: azure/arm-deploy@v1
+        uses: azure/arm-deploy@v1.0.9
         with:
           resourceGroupName: ${{ env.LOAD_TEST_RESOURCE_GROUP }}
           template: ./ARMTemplate/template.json
+          deploymentMode: Incremental
           parameters: ./ARMTemplate/parameters.json name=${{ env.LOAD_TEST_RESOURCE }} location="${{ env.LOCATION }}"
           
       - name: 'Azure Load Testing'
